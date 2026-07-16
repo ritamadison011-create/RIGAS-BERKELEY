@@ -17,15 +17,15 @@ import {
 } from './types';
 
 // @ts-ignore
-import gallery1 from './assets/images/gallery_worker_welder_1784077967150.jpg';
+import gallery1 from './assets/images/gallery_worker_welder_new_1784166751430.jpg';
 // @ts-ignore
-import gallery2 from './assets/images/gallery_drilling_auger_1784077978544.jpg';
+import gallery2 from './assets/images/gallery_drilling_auger_new_1784166725298.jpg';
 // @ts-ignore
-import gallery3 from './assets/images/gallery_safety_audit_1784077991793.jpg';
+import gallery3 from './assets/images/gallery_safety_audit_new_1784166737955.jpg';
 // @ts-ignore
-import gallery4 from './assets/images/gallery_crane_lift_1784078006271.jpg';
+import gallery4 from './assets/images/gallery_crane_lift_new_1784166697548.jpg';
 // @ts-ignore
-import gallery5 from './assets/images/gallery_drill_floor_1784078019077.jpg';
+import gallery5 from './assets/images/gallery_drill_floor_new_1784166710321.jpg';
 
 // Company start year: 2020
 // Address: 6412 N. WASHTENAW, CHICAGO, IL 60645-0000

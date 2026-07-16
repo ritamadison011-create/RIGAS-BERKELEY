@@ -14,10 +14,10 @@ const servicesData = [
 ];
 
 const equipmentData = [
-  { id: "rb-dr-01", name: "RBG-1500 Land Drilling Rig", category: "Drilling Rigs", specifications: { "Max Depth": "20,000 ft", "Hook Load": "1,000,000 lbs", "Drawworks HP": "1,500 HP" }, features: ["Triplex Mud Pumps", "Top Drive System"], applications: ["Ultra-deep gas wells", "Heavy shale operations"], imageUrl: "assets/images/hero_drilling_rig_1784077952777.jpg" },
-  { id: "rb-cr-02", name: "Liebherr LR 1600 Crawler Crane", category: "Cranes", specifications: { "Max Lift": "600 Tons", "Max Boom": "340 ft", "Counterweight": "190 Tons" }, features: ["Narrow track capability", "Redundant crane safety systems"], applications: ["Refinery construction", "Offshore vessel loading"], imageUrl: "assets/images/gallery_crane_lift_1784078006271.jpg" },
-  { id: "rb-ge-03", name: "Caterpillar 3516B Multi-MW Generator", category: "Generator & Compressors", specifications: { "Output": "2,000 ekW", "Voltage": "4,160V", "Fuel Type": "Diesel/Dual Fuel" }, features: ["Sound-insulated canopy", "Remote SCADA panel"], applications: ["Rig site grid operations", "Emergency refinery backup"], imageUrl: "assets/images/gallery_worker_welder_1784077967150.jpg" },
-  { id: "rb-pu-04", name: "Gardner Denver PZ-11 Mud Pump", category: "Pumps & Tanks", specifications: { "Output Pressure": "5,000 PSI", "Input Power": "1,600 HP", "Flow Rate": "620 GPM" }, features: ["High-strength steel cylinders", "Direct motor coupling"], applications: ["Deep drilling mud circulation", "High-volume piping testing"], imageUrl: "assets/images/gallery_drilling_auger_1784077978544.jpg" }
+  { id: "rb-dr-01", name: "RBG-1500 Land Drilling Rig", category: "Drilling Rigs", specifications: { "Max Depth": "20,000 ft", "Hook Load": "1,000,000 lbs", "Drawworks HP": "1,500 HP" }, features: ["Triplex Mud Pumps", "Top Drive System"], applications: ["Ultra-deep gas wells", "Heavy shale operations"], imageUrl: "assets/images/hero_drilling_rig_new_1784166672041.jpg" },
+  { id: "rb-cr-02", name: "Liebherr LR 1600 Crawler Crane", category: "Cranes", specifications: { "Max Lift": "600 Tons", "Max Boom": "340 ft", "Counterweight": "190 Tons" }, features: ["Narrow track capability", "Redundant crane safety systems"], applications: ["Refinery construction", "Offshore vessel loading"], imageUrl: "assets/images/gallery_crane_lift_new_1784166697548.jpg" },
+  { id: "rb-ge-03", name: "Caterpillar 3516B Multi-MW Generator", category: "Generator & Compressors", specifications: { "Output": "2,000 ekW", "Voltage": "4,160V", "Fuel Type": "Diesel/Dual Fuel" }, features: ["Sound-insulated canopy", "Remote SCADA panel"], applications: ["Rig site grid operations", "Emergency refinery backup"], imageUrl: "assets/images/gallery_worker_welder_new_1784166751430.jpg" },
+  { id: "rb-pu-04", name: "Gardner Denver PZ-11 Mud Pump", category: "Pumps & Tanks", specifications: { "Output Pressure": "5,000 PSI", "Input Power": "1,600 HP", "Flow Rate": "620 GPM" }, features: ["High-strength steel cylinders", "Direct motor coupling"], applications: ["Deep drilling mud circulation", "High-volume piping testing"], imageUrl: "assets/images/gallery_drilling_auger_new_1784166725298.jpg" }
 ];
 
 const projectsData = [
@@ -43,11 +43,11 @@ const faqData = [
 ];
 
 const galleryData = [
-  { id: "gal-1", title: "Compliance Audit Manifold System", category: "Oil Rigs", imageUrl: "assets/images/gallery_safety_audit_1784077991793.jpg", description: "Our certified compliance inspector conducting safety audits at an active drilling manifold station." },
-  { id: "gal-2", title: "Trenchless Auger Rig", category: "Heavy Equipment", imageUrl: "assets/images/gallery_drilling_auger_1784077978544.jpg", description: "A heavy-duty horizontal boring and auger drilling rig undergoing calibration." },
-  { id: "gal-3", title: "Technical Pipeline Audit", category: "Engineering Teams", imageUrl: "assets/images/gallery_safety_audit_1784077991793.jpg", description: "Specialized petroleum technician auditing high-pressure valve telemetry." },
-  { id: "gal-4", title: "Offshore Heavy Generator Lift", category: "Projects", imageUrl: "assets/images/gallery_crane_lift_1784078006271.jpg", description: "Multi-ton modular equipment being safely hoisted onto the deck of an offshore construction vessel." },
-  { id: "gal-5", title: "Derrick Rotary Drilling Floor", category: "Oil Rigs", imageUrl: "assets/images/gallery_drill_floor_1784078019077.jpg", description: "High-power casing and drill-pipe alignment procedures on the active rotary drilling floor." }
+  { id: "gal-1", title: "Compliance Audit Manifold System", category: "Oil Rigs", imageUrl: "assets/images/gallery_safety_audit_new_1784166737955.jpg", description: "Our certified compliance inspector conducting safety audits at an active drilling manifold station." },
+  { id: "gal-2", title: "Trenchless Auger Rig", category: "Heavy Equipment", imageUrl: "assets/images/gallery_drilling_auger_new_1784166725298.jpg", description: "A heavy-duty horizontal boring and auger drilling rig undergoing calibration." },
+  { id: "gal-3", title: "Technical Pipeline Audit", category: "Engineering Teams", imageUrl: "assets/images/gallery_safety_audit_new_1784166737955.jpg", description: "Specialized petroleum technician auditing high-pressure valve telemetry." },
+  { id: "gal-4", title: "Offshore Heavy Generator Lift", category: "Projects", imageUrl: "assets/images/gallery_crane_lift_new_1784166697548.jpg", description: "Multi-ton modular equipment being safely hoisted onto the deck of an offshore construction vessel." },
+  { id: "gal-5", title: "Derrick Rotary Drilling Floor", category: "Oil Rigs", imageUrl: "assets/images/gallery_drill_floor_new_1784166710321.jpg", description: "High-power casing and drill-pipe alignment procedures on the active rotary drilling floor." }
 ];
 
 const careerOpeningsData = [
@@ -253,7 +253,7 @@ function renderHome(container) {
         </div>
       </div>
       <div class="md:w-1/2 aspect-video md:aspect-[4/3] rounded-xl overflow-hidden border border-zinc-850 relative">
-        <img src="assets/images/hero_drilling_rig_1784077952777.jpg" alt="Active Rig drilling floor" class="w-full h-full object-cover">
+        <img src="assets/images/hero_drilling_rig_new_1784166672041.jpg" alt="Active Rig drilling floor" class="w-full h-full object-cover">
         <div class="absolute bottom-4 left-4 bg-zinc-950/80 backdrop-blur-sm border border-zinc-800 px-3 py-1.5 rounded-sm text-[10px] font-mono text-zinc-400">
           OFFSHORE DISPATCH DECK ACTIVE
         </div>
@@ -397,7 +397,7 @@ function renderAbout(container) {
         </div>
 
         <div class="aspect-video w-full rounded-lg overflow-hidden border border-zinc-800 relative bg-zinc-950">
-          <img src="assets/images/hero_blueprint_review_1784079105477.jpg" alt="Metal fabrication yard review" class="w-full h-full object-cover">
+          <img src="assets/images/hero_blueprint_review_new_1784166684154.jpg" alt="Metal fabrication yard review" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-5">
             <span class="text-[10px] font-mono text-[#148062] uppercase">Compliance Checklist Desk</span>
             <h5 class="text-xs font-bold text-white font-sans uppercase">ISO-9001 and API SPEC Q1 Registered Management</h5>
@@ -1455,12 +1455,12 @@ function renderContact(container) {
             <line x1="180" y1="0" x2="180" y2="150" stroke="#0f172a" stroke-width="1.5" />
             <line x1="0" y1="70" x2="300" y2="70" stroke="#0f172a" stroke-width="1.5" />
             <!-- N Washtenaw label -->
-            <text x="60" y="40" fill="#475569" font-size="7" font-family="monospace">N. WASHTENAW AVE</text>
-            <text x="190" y="110" fill="#475569" font-size="7" font-family="monospace">W. DEVON AVE</text>
+            <text x="60" y="40" fill="#475569" font-size="7" font-family="Arial">N. WASHTENAW AVE</text>
+            <text x="190" y="110" fill="#475569" font-size="7" font-family="Arial">W. DEVON AVE</text>
             <!-- Rigas Berkeley Yard pointer -->
             <circle cx="180" cy="70" r="10" class="animate-pulse-glow" fill="none" stroke="#148062" stroke-width="1" />
             <circle cx="180" cy="70" r="3.5" fill="#148062" />
-            <text x="195" y="68" fill="white" font-size="7" font-family="sans-serif" font-weight="bold">RBG CHICAGO YARD</text>
+            <text x="195" y="68" fill="white" font-size="7" font-family="Arial" font-weight="bold">RBG CHICAGO YARD</text>
           </svg>
         </div>
       </div>

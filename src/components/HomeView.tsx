@@ -22,9 +22,9 @@ import {
 } from 'lucide-react';
 import { servicesData, projectsData, industriesData, equipmentData, newsArticlesData, testimonialsData, companyDetails } from '../data';
 // @ts-ignore
-import heroRigImg from '../assets/images/hero_drilling_rig_1784077952777.jpg';
+import heroRigImg from '../assets/images/hero_drilling_rig_new_1784166672041.jpg';
 // @ts-ignore
-import blueprintReviewImg from '../assets/images/hero_blueprint_review_1784079105477.jpg';
+import blueprintReviewImg from '../assets/images/hero_blueprint_review_new_1784166684154.jpg';
 
 interface HomeViewProps {
   onNavigate: (page: string) => void;

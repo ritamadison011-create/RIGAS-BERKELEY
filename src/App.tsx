@@ -40,7 +40,7 @@ import PrivacyView from './components/PrivacyView';
 import WhatsAppButton from './components/WhatsAppButton';
 import RequestQuoteModal from './components/RequestQuoteModal';
 // @ts-ignore
-import rigasLogo from './assets/images/rigas_berkeley_logo_1784076638029.jpg';
+import rigasLogo from './assets/images/rigas_logo_new_1784166643182.jpg';
 
 // Import Data for global search
 import { servicesData, projectsData, equipmentData, companyDetails } from './data';

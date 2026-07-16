@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "Arial", sans-serif;
+  --font-serif: "Arial", sans-serif;
+  --font-mono: "Arial", sans-serif;
   --color-brand-orange: #ff6a00;
   --color-brand-navy: #050B15;
   --color-brand-steel: #475569;
+}
+
+/* Global Font Override to Arial */
+html, body, button, input, select, textarea, p, span, h1, h2, h3, h4, h5, h6, a, div {
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 /* Custom scrollbar and utilities */

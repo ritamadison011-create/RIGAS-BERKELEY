@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { MessageSquare, Send, X } from 'lucide-react';
 import { companyDetails } from '../data';
 // @ts-ignore
-import rigasLogo from '../assets/images/rigas_berkeley_logo_1784076638029.jpg';
+import rigasLogo from '../assets/images/rigas_logo_new_1784166643182.jpg';
 
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
