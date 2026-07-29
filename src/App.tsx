@@ -38,7 +38,7 @@ import PrivacyView from './components/PrivacyView';
 import WhatsAppButton from './components/WhatsAppButton';
 import RequestQuoteModal from './components/RequestQuoteModal';
 // @ts-ignore
-import rigasLogo from './assets/images/rigas_logo_new_1784166643182.jpg';
+import rigasLogo from './assets/images/website_logo_1785368042797.jpg';
 
 // Import Data for global search
 import { servicesData, projectsData, equipmentData, companyDetails } from './data';
