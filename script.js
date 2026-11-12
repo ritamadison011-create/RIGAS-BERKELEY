@@ -222,9 +222,9 @@ function renderHome(container) {
   container.innerHTML = `
     <!-- Hero Banner Plate -->
     <div class="relative w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 px-6 py-20 md:px-16 md:py-28 flex flex-col items-center justify-center text-center min-h-[520px]">
-      <img src="/assets/aistudio/Rigging-and-Lifting-scaled_c0363826.jpg" alt="Rigging and heavy lifting operations" class="absolute inset-0 w-full h-full object-cover object-center opacity-45">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#050B15]/85 via-[#050B15]/65 to-[#050B15]/95"></div>
-      <div class="absolute inset-0 bg-gradient-to-r from-[#050B15]/80 via-transparent to-[#050B15]/80"></div>
+      <img src="/assets/aistudio/Rigging-and-Lifting-scaled_c0363826.jpg" alt="Rigging and heavy lifting operations" referrerpolicy="no-referrer" class="absolute inset-0 w-full h-full object-cover object-center opacity-75 brightness-75 contrast-110">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#050B15]/75 via-[#050B15]/50 to-[#050B15]/85"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#050B15]/60 via-transparent to-[#050B15]/60"></div>
       <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
       <div class="relative space-y-6 max-w-6xl mx-auto z-10 flex flex-col items-center text-center">
         <span class="text-sm sm:text-base md:text-lg font-mono text-[#148062] uppercase tracking-widest font-bold border border-[#148062]/30 bg-[#148062]/10 px-5 py-2 rounded-sm backdrop-blur-sm">Est. 2020 | Chicago Yard</span>
