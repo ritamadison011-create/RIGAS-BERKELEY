@@ -64,6 +64,14 @@ export default defineConfig(() => {
             fs.copyFileSync(srcScript, destScript);
             console.log('Successfully copied script.js to dist/');
           }
+
+          // Copy CNAME to dist
+          const srcCname = path.resolve(__dirname, 'CNAME');
+          const destCname = path.resolve(distDir, 'CNAME');
+          if (fs.existsSync(srcCname)) {
+            fs.copyFileSync(srcCname, destCname);
+            console.log('Successfully copied CNAME to dist/');
+          }
           
           // Copy assets/images to dist/assets/images
           if (fs.existsSync(srcImages)) {

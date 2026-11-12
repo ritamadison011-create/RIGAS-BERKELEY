@@ -29,14 +29,14 @@ import gallery5 from './assets/images/gallery_drill_floor_new_1784166710321.jpg'
 
 // Company start year: 2020
 // Address: 6412 N. WASHTENAW, CHICAGO, IL 60645-0000
-// Phone: +1 (312) 217-3841
+// Phone: +1 (312) 210-2667
 
 export const companyDetails = {
   name: "RIGAS BERKELEY LLC",
   shortName: "Rigas Berkeley",
   founded: 2020,
   address: "6412 N. WASHTENAW, CHICAGO, IL 60645-0000",
-  phone: "+1 (312) 217-3841",
+  phone: "+1 (312) 210-2667",
   email: "support@rigasberkeley.com",
   portalEmail: "portal-security@rigasberkeley.com",
   hours: {

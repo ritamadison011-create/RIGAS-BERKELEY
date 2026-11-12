@@ -100,9 +100,9 @@ export default function ContactView({ onOpenQuote }: ContactViewProps) {
                 </div>
                 <div className="space-y-1">
                   <span className="text-[10px] font-mono text-gray-500 uppercase block leading-none">24/7 Operations Desk:</span>
-                  <p className="text-xs text-white font-mono font-bold">
+                  <a href={`tel:${companyDetails.phone.replace(/[^0-9+]/g, '')}`} className="text-xs text-white font-mono font-bold hover:text-[#148062] transition-colors block">
                     {companyDetails.phone}
-                  </p>
+                  </a>
                 </div>
               </div>
 

@@ -138,10 +138,10 @@ export default function App() {
         </div>
         
         <div className="flex gap-4 items-center">
-          <span className="flex items-center gap-1 text-zinc-400">
+          <a href={`tel:${companyDetails.phone.replace(/[^0-9+]/g, '')}`} className="flex items-center gap-1 text-zinc-400 hover:text-white transition-colors">
             <Phone className="w-3 h-3 text-[#148062]" />
             DISPATCH // {companyDetails.phone}
-          </span>
+          </a>
         </div>
       </div>
 
@@ -445,7 +445,9 @@ export default function App() {
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-[#148062] shrink-0" />
-                <span>+1 (312) 217-3841 (DISPATCH)</span>
+                <a href={`tel:${companyDetails.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-white transition-colors">
+                  {companyDetails.phone} (DISPATCH)
+                </a>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-zinc-600 shrink-0" />
