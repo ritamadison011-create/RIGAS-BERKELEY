@@ -38,7 +38,7 @@ import PrivacyView from './components/PrivacyView';
 import WhatsAppButton from './components/WhatsAppButton';
 import RequestQuoteModal from './components/RequestQuoteModal';
 // @ts-ignore
-import rigasLogo from './assets/images/website_logo_1785368042797.jpg';
+import rigasLogo from './assets/images/rigas_berkeley_corporate_logo.png';
 
 // Import Data for global search
 import { servicesData, projectsData, equipmentData, companyDetails } from './data';
@@ -157,17 +157,17 @@ export default function App() {
             }}
             className="flex items-center gap-3 cursor-pointer shrink-0 group"
           >
-            <div className="w-9 h-9 flex items-center justify-center select-none rounded-none overflow-hidden border border-zinc-200 bg-white transition-transform duration-200 group-hover:scale-105">
+            <div className="h-10 sm:h-12 flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-105">
               <img
                 src={rigasLogo}
                 alt="Rigas Berkeley LLC Logo"
-                className="w-full h-full object-cover"
+                className="h-full w-auto max-w-[130px] sm:max-w-[160px] object-contain"
                 referrerPolicy="no-referrer"
               />
             </div>
-            <div>
-              <h1 className="text-lg sm:text-xl font-bold font-sans text-zinc-900 tracking-normal uppercase leading-none">
-                RIGAS BERKELEY <span className="text-[#148062] font-sans font-bold">LLC</span>
+            <div className="hidden sm:block">
+              <h1 className="text-base font-bold font-sans text-zinc-900 tracking-normal uppercase leading-none">
+                RIGAS BERKELEY <span className="text-[#ff6a00] font-sans font-bold">LLC</span>
               </h1>
               <p className="text-[9px] text-zinc-500 uppercase tracking-[0.25em] font-mono mt-1.5 leading-none">
                 DESIGN & HEAVY ENG
@@ -295,16 +295,16 @@ export default function App() {
           >
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-4 border-b border-zinc-800">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 flex items-center justify-center select-none rounded-none overflow-hidden border border-zinc-800 bg-[#121214]">
+                <div className="flex items-center gap-2.5">
+                  <div className="h-9 w-auto px-2 py-0.5 flex items-center justify-center rounded bg-white shadow-sm shrink-0">
                     <img
                       src={rigasLogo}
                       alt="Rigas Berkeley LLC Logo"
-                      className="w-full h-full object-cover"
+                      className="h-full w-auto max-w-[100px] object-contain"
                       referrerPolicy="no-referrer"
                     />
                   </div>
-                  <span className="text-sm font-bold tracking-tight uppercase text-white">RIGAS BERKELEY <span className="text-[#148062] font-sans font-bold">LLC</span></span>
+                  <span className="text-xs font-bold tracking-tight uppercase text-white">RIGAS BERKELEY <span className="text-[#ff6a00] font-sans font-bold">LLC</span></span>
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -386,18 +386,18 @@ export default function App() {
           
           {/* Logo & Corporate profile */}
           <div className="md:col-span-5 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 flex items-center justify-center select-none rounded-none overflow-hidden border border-zinc-800 bg-[#121214]">
+            <div className="flex items-center gap-3">
+              <div className="h-10 w-auto px-2 py-1 flex items-center justify-center rounded bg-white shadow-sm shrink-0">
                 <img
                   src={rigasLogo}
                   alt="Rigas Berkeley LLC Logo"
-                  className="w-full h-full object-cover"
+                  className="h-full w-auto max-w-[120px] object-contain"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div>
                 <h3 className="text-base font-bold font-sans text-white tracking-wider uppercase leading-none">
-                  RIGAS BERKELEY <span className="text-[#148062] font-sans font-bold">LLC</span>
+                  RIGAS BERKELEY <span className="text-[#ff6a00] font-sans font-bold">LLC</span>
                 </h3>
                 <span className="text-[9px] font-mono text-zinc-500 block uppercase tracking-widest mt-1.5 font-bold">Heavy Engineering Yards</span>
               </div>

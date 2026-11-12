@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { MessageSquare, Send, X } from 'lucide-react';
 import { companyDetails } from '../data';
 // @ts-ignore
-import rigasLogo from '../assets/images/website_logo_1785368042797.jpg';
+import rigasLogo from '../assets/images/rigas_berkeley_corporate_logo.png';
 
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,12 +61,12 @@ export default function WhatsAppButton() {
           {/* Header */}
           <div className="bg-gradient-to-r from-slate-900 to-slate-950 px-4 py-3.5 border-b border-slate-800 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="relative w-9 h-9 bg-slate-800 rounded-full flex items-center justify-center border border-slate-700 overflow-hidden">
+              <div className="relative w-10 h-10 bg-white rounded-full flex items-center justify-center border border-slate-700 overflow-hidden p-1 shrink-0">
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border border-slate-900 z-10"></span>
                 <img
                   src={rigasLogo}
                   alt="Rigas Berkeley Logo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                 />
               </div>
