@@ -167,10 +167,10 @@ export default function App() {
             </div>
             <div className="hidden sm:block">
               <h1 className="text-base font-bold font-sans text-zinc-900 tracking-normal uppercase leading-none">
-                RIGAS BERKELEY <span className="text-[#ff6a00] font-sans font-bold">LLC</span>
+                <span className="text-[#0052cc]">RIGAS</span> BERKELEY <span className="text-[#0052cc] font-sans font-bold">LLC</span>
               </h1>
               <p className="text-[9px] text-zinc-500 uppercase tracking-[0.25em] font-mono mt-1.5 leading-none">
-                DESIGN & HEAVY ENG
+                HEAVY RIGGING & COMPLIANCE
               </p>
             </div>
           </div>
@@ -304,7 +304,7 @@ export default function App() {
                       referrerPolicy="no-referrer"
                     />
                   </div>
-                  <span className="text-xs font-bold tracking-tight uppercase text-white">RIGAS BERKELEY <span className="text-[#ff6a00] font-sans font-bold">LLC</span></span>
+                  <span className="text-xs font-bold tracking-tight uppercase text-white"><span className="text-[#3b82f6]">RIGAS</span> BERKELEY <span className="text-[#3b82f6] font-sans font-bold">LLC</span></span>
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -397,7 +397,7 @@ export default function App() {
               </div>
               <div>
                 <h3 className="text-base font-bold font-sans text-white tracking-wider uppercase leading-none">
-                  RIGAS BERKELEY <span className="text-[#ff6a00] font-sans font-bold">LLC</span>
+                  <span className="text-[#3b82f6]">RIGAS</span> BERKELEY <span className="text-[#3b82f6] font-sans font-bold">LLC</span>
                 </h3>
                 <span className="text-[9px] font-mono text-zinc-500 block uppercase tracking-widest mt-1.5 font-bold">Heavy Engineering Yards</span>
               </div>
