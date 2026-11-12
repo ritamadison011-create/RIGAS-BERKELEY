@@ -221,37 +221,21 @@ function renderTabContent(tabId) {
 function renderHome(container) {
   container.innerHTML = `
     <!-- Hero Banner Plate -->
-    <div class="relative rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 p-8 md:p-16 flex flex-col md:flex-row items-center gap-10">
+    <div class="relative w-full rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800 px-6 py-20 md:px-16 md:py-28 flex flex-col items-center justify-center text-center min-h-[520px]">
+      <img src="/assets/aistudio/Rigging-and-Lifting-scaled_c0363826.jpg" alt="Rigging and heavy lifting operations" class="absolute inset-0 w-full h-full object-cover object-center opacity-45">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#050B15]/85 via-[#050B15]/65 to-[#050B15]/95"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#050B15]/80 via-transparent to-[#050B15]/80"></div>
       <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      <div class="relative space-y-6 md:w-1/2 z-10">
-        <span class="text-xs font-mono text-[#148062] uppercase tracking-widest font-bold border border-[#148062]/20 bg-[#148062]/5 px-3 py-1 rounded-sm">Est. 2020 | Chicago Yard</span>
-        <h2 class="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight leading-tight uppercase italic">
-          High-Pressure <br><span class="text-[#148062]">Rigging & Metal</span> Fabrication
+      <div class="relative space-y-6 max-w-6xl mx-auto z-10 flex flex-col items-center text-center">
+        <span class="text-sm sm:text-base md:text-lg font-mono text-[#148062] uppercase tracking-widest font-bold border border-[#148062]/30 bg-[#148062]/10 px-5 py-2 rounded-sm backdrop-blur-sm">Est. 2020 | Chicago Yard</span>
+        <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-display font-extrabold text-white tracking-wide leading-[1.02] uppercase">
+          High-Pressure
+          <span class="block text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] xl:text-[8.5rem] font-display font-black text-[#3B82F6] tracking-normal leading-[0.95] my-3 drop-shadow-[0_4px_24px_rgba(59,130,246,0.45)]">Rigging & Metal</span>
+          Fabrication
         </h2>
-        <p class="text-xs md:text-sm text-zinc-400 leading-relaxed font-sans">
+        <p class="text-sm md:text-base text-zinc-200 leading-relaxed font-sans max-w-2xl mx-auto">
           RIGAS BERKELEY LLC delivers ASME Section VIII pressure welding, lattice crawler crane leases, subsea wellhead telemetry support, and certified offshore operator staffing.
         </p>
-        <div class="flex flex-wrap gap-4 pt-2">
-          <button onclick="navigateToTab('Services')" class="bg-[#148062] hover:bg-[#10674E] text-white px-6 py-3 text-xs font-bold font-mono uppercase tracking-wider rounded-lg transition-all cursor-pointer">
-            Explore Services
-          </button>
-          <button onclick="openQuoteModal();" class="border border-zinc-700 bg-transparent hover:bg-zinc-900 text-white px-6 py-3 text-xs font-bold font-mono uppercase tracking-wider rounded-lg transition-all cursor-pointer">
-            Contact Dispatch
-          </button>
-        </div>
-      </div>
-      <div class="md:w-1/2 aspect-video md:aspect-[4/3] rounded-xl overflow-hidden border border-zinc-850 relative bg-gradient-to-br from-slate-900 to-[#020617] flex flex-col items-center justify-center p-6 text-center space-y-4">
-        <div class="w-16 h-16 rounded-full bg-[#148062]/10 border border-[#148062]/30 flex items-center justify-center text-[#148062] animate-pulse">
-          <i data-lucide="activity" class="w-8 h-8"></i>
-        </div>
-        <div class="space-y-1">
-          <span class="text-[10px] font-mono tracking-widest text-[#148062] font-bold uppercase">RIGAS BERKELEY OPERATIVE NETWORK</span>
-          <h4 class="text-xs font-bold text-white uppercase tracking-wider">OFFSHORE HEAVY DISPATCH HUB</h4>
-        </div>
-        <div class="absolute bottom-4 left-4 bg-zinc-950/80 backdrop-blur-sm border border-zinc-800 px-3 py-1.5 rounded-sm text-[10px] font-mono text-zinc-400 flex items-center gap-2">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#148062] animate-ping"></span>
-          <span>DISPATCH DECK ACTIVE</span>
-        </div>
       </div>
     </div>
 
@@ -309,11 +293,11 @@ function renderHome(container) {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
         ${testimonialsData.map(test => `
           <div class="bg-[#0a0f1a] border border-zinc-800 p-6 rounded-md space-y-4">
-            <p class="text-xs italic text-zinc-300 leading-relaxed">"${test.quote}"</p>
+            <p class="font-quote text-sm md:text-[15px] italic text-zinc-200 leading-relaxed">"${test.quote}"</p>
             <div class="flex items-center justify-between border-t border-zinc-850/60 pt-3">
               <div>
-                <h5 class="text-xs font-bold text-white uppercase tracking-wider">${test.name}</h5>
-                <p class="text-[10px] font-mono text-[#148062]">${test.role} - ${test.company}</p>
+                <h5 class="font-grotesk text-sm font-bold text-white uppercase tracking-wider">${test.name}</h5>
+                <p class="font-grotesk text-xs font-medium text-[#148062] mt-0.5">${test.role} - ${test.company}</p>
               </div>
               <div class="flex text-[#ff6a00]">
                 <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
@@ -329,7 +313,7 @@ function renderHome(container) {
     </div>
 
     <!-- FAQ Accordion section -->
-    <div class="space-y-6 max-w-3xl mx-auto">
+    <div class="space-y-6 w-full">
       <div class="text-center space-y-1">
         <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest font-bold">Direct Answers</span>
         <h4 class="text-lg font-serif text-white uppercase italic font-bold">Frequently Asked Inquiries</h4>
@@ -850,7 +834,7 @@ function viewEquipmentSpecs(equipId) {
   // Show detailed spec sheet alert/drawer/modal
   const container = document.getElementById("view-Equipment");
   container.innerHTML = `
-    <div class="max-w-3xl mx-auto bg-[#0a0f1a] border border-zinc-800 rounded-lg p-6 sm:p-8 space-y-8 animate-fade-in">
+    <div class="w-full bg-[#0a0f1a] border border-zinc-800 rounded-lg p-6 sm:p-8 space-y-8 animate-fade-in">
       <button onclick="renderTabContent('Equipment');" class="flex items-center gap-1.5 text-[10px] text-zinc-400 hover:text-white font-bold uppercase tracking-wider border border-zinc-800 px-3.5 py-2 rounded-sm transition-all cursor-pointer">
         &larr; Back to Equipment Fleet
       </button>
@@ -927,7 +911,7 @@ function viewEquipmentSpecs(equipId) {
 // --- RENDER: SAFETY ---
 function renderSafety(container) {
   container.innerHTML = `
-    <div class="max-w-4xl mx-auto space-y-10">
+    <div class="w-full space-y-10">
       <div class="text-center max-w-xl mx-auto space-y-2">
         <span class="text-xs font-mono text-[#148062] uppercase tracking-widest font-bold">Absolute Mandate</span>
         <h3 class="text-2xl md:text-3xl font-serif font-bold text-white uppercase italic">Zero Harm Safety Policy</h3>
@@ -1483,7 +1467,7 @@ function handleContactSubmit(e) {
 // --- RENDER: PRIVACY POLICY ---
 function renderPrivacyPolicy(container) {
   container.innerHTML = `
-    <div class="max-w-3xl mx-auto bg-[#0a0f1a] border border-zinc-800 p-6 sm:p-8 rounded-lg space-y-6 font-sans text-xs text-zinc-400 leading-relaxed">
+    <div class="w-full bg-[#0a0f1a] border border-zinc-800 p-6 sm:p-8 rounded-lg space-y-6 font-sans text-xs text-zinc-400 leading-relaxed">
       <h3 class="text-xl font-serif font-bold text-white uppercase italic border-b border-zinc-850 pb-3">Digital Compliance & Privacy Policy</h3>
       <p class="text-[11px] font-mono text-zinc-500">Last Revised: February 25, 2026 | RIGAS BERKELEY LLC</p>
       

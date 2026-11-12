@@ -49,9 +49,15 @@ export default function HomeView({ onNavigate, onOpenQuote }: HomeViewProps) {
       
       {/* 1. Hero / Introduction section - VELOCITY STUDIO CLONE LAYOUT */}
       <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden border-b border-zinc-800/80 bg-black">
-        {/* Rig background picture */}
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-zinc-950 via-slate-950 to-black">
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent"></div>
+        {/* Rigging & Lifting dark background picture */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/assets/aistudio/Rigging-and-Lifting-scaled_c0363826.jpg"
+            alt="Rigging and heavy lifting operations"
+            className="w-full h-full object-cover object-center opacity-45"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/60"></div>
         </div>
         {/* Subtle grid accent background */}
         <div className="absolute inset-0 z-10 opacity-15 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>

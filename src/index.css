@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Arial", sans-serif;
-  --font-serif: "Arial", sans-serif;
-  --font-mono: "Arial", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Barlow Condensed", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
   --color-brand-orange: #ff6a00;
   --color-brand-navy: #050B15;
   --color-brand-steel: #475569;
 }
 
-/* Global Font Override to Arial */
-html, body, button, input, select, textarea, p, span, h1, h2, h3, h4, h5, h6, a, div {
-  font-family: Arial, Helvetica, sans-serif !important;
+body {
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 /* Custom scrollbar and utilities */
