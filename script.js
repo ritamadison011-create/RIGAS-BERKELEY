@@ -5,31 +5,31 @@
 // ==================== 1. CORPORATE DATA STORE ====================
 
 const servicesData = [
-  { id: "derrick-steel-erection", title: "Derrick Steel Erection", category: "Derrick Steel", specs: { "API Standard": "API-4F 5th Ed", "Max Hook Capacity": "1,500,000 lbs", "Steel Grade": "ASTM A572 Gr 50" }, desc: "ASME certified structural steel assembly, mast modifications, and heavy derrick rig-ups." },
-  { id: "heavy-crawler-cranes", title: "Heavy Crawler Cranes", category: "Heavy Logistics", specs: { "Max Lift": "600 Tons", "Boom Length": "Up to 340 ft", "Certification": "OSHA 1926.1400" }, desc: "High-capacity lattice-boom crawler crane leasing with NCCCO-certified operators." },
-  { id: "subsea-wellhead-engineering", title: "Subsea Wellhead Support", category: "Offshore Engineering", specs: { "Max Depth": "10,000 ft", "Design Spec": "API 17D / API 6A", "Pressure Rating": "15,000 PSI" }, desc: "Engineering support, gasket sealing, and valve telemetry for deepwater wells." },
-  { id: "asme-alloy-welding", title: "ASME Structural Alloy Welding", category: "Derrick Steel", specs: { "Welding Codes": "ASME Sec VIII Div 1", "Pipe Spec": "ASME B31.3", "NDE Verification": "100% UT/X-Ray" }, desc: "High-pressure piping manifolds, skid systems, and custom steel fabrications." },
-  { id: "heavy-haul-logistics", title: "Heavy Haul & Logistics", category: "Heavy Logistics", specs: { "Max Load": "180,000 lbs", "Sensor Setup": "Geotechnical Ice Sensors", "Route Survey": "3D CAD Swept Path" }, desc: "Logistics, route clearance, and specialized transport for over-dimensional superloads." },
-  { id: "api-q1-compliance", title: "API-Q1 Compliance Auditing", category: "Compliance Auditing", specs: { "Auditor Level": "Lead Inspector Q1", "Standards Covered": "API Q1 / ISO 9001", "Turnaround Audits": "Full Manifold / Valve" }, desc: "Full-spectrum quality management audits and certifications for rig operations." }
+  { id: "derrick-steel-erection", title: "Derrick Steel Erection", category: "Derrick Steel", specs: { "API Standard": "API-4F 5th Ed", "Max Hook Capacity": "1,500,000 lbs", "Steel Grade": "ASTM A572 Gr 50" }, desc: "ASME certified structural steel assembly, mast modifications, and heavy derrick rig-ups.", imageUrl: "assets/images/hero_drilling_rig_new_1784166672041.jpg" },
+  { id: "heavy-crawler-cranes", title: "Heavy Crawler Cranes", category: "Heavy Logistics", specs: { "Max Lift": "600 Tons", "Boom Length": "Up to 340 ft", "Certification": "OSHA 1926.1400" }, desc: "High-capacity lattice-boom crawler crane leasing with NCCCO-certified operators.", imageUrl: "assets/images/gallery_crane_lift_new_1784166697548.jpg" },
+  { id: "subsea-wellhead-engineering", title: "Subsea Wellhead Support", category: "Offshore Engineering", specs: { "Max Depth": "10,000 ft", "Design Spec": "API 17D / API 6A", "Pressure Rating": "15,000 PSI" }, desc: "Engineering support, gasket sealing, and valve telemetry for deepwater wells.", imageUrl: "assets/images/service_subsea_wellhead_1794516291827.jpg" },
+  { id: "asme-alloy-welding", title: "ASME Structural Alloy Welding", category: "Derrick Steel", specs: { "Welding Codes": "ASME Sec VIII Div 1", "Pipe Spec": "ASME B31.3", "NDE Verification": "100% UT/X-Ray" }, desc: "High-pressure piping manifolds, skid systems, and custom steel fabrications.", imageUrl: "assets/images/gallery_worker_welder_new_1784166751430.jpg" },
+  { id: "heavy-haul-logistics", title: "Heavy Haul & Logistics", category: "Heavy Logistics", specs: { "Max Load": "180,000 lbs", "Sensor Setup": "Geotechnical Ice Sensors", "Route Survey": "3D CAD Swept Path" }, desc: "Logistics, route clearance, and specialized transport for over-dimensional superloads.", imageUrl: "assets/images/service_heavy_haul_1794516293590.jpg" },
+  { id: "api-q1-compliance", title: "API-Q1 Compliance Auditing", category: "Compliance Auditing", specs: { "Auditor Level": "Lead Inspector Q1", "Standards Covered": "API Q1 / ISO 9001", "Turnaround Audits": "Full Manifold / Valve" }, desc: "Full-spectrum quality management audits and certifications for rig operations.", imageUrl: "assets/images/gallery_safety_audit_new_1784166737955.jpg" }
 ];
 
 const equipmentData = [
   { id: "rb-dr-01", name: "RBG-1500 Land Drilling Rig", category: "Drilling Rigs", specifications: { "Max Depth": "20,000 ft", "Hook Load": "1,000,000 lbs", "Drawworks HP": "1,500 HP" }, features: ["Triplex Mud Pumps", "Top Drive System"], applications: ["Ultra-deep gas wells", "Heavy shale operations"], imageUrl: "assets/images/hero_drilling_rig_new_1784166672041.jpg" },
   { id: "rb-cr-02", name: "Liebherr LR 1600 Crawler Crane", category: "Cranes", specifications: { "Max Lift": "600 Tons", "Max Boom": "340 ft", "Counterweight": "190 Tons" }, features: ["Narrow track capability", "Redundant crane safety systems"], applications: ["Refinery construction", "Offshore vessel loading"], imageUrl: "assets/images/gallery_crane_lift_new_1784166697548.jpg" },
-  { id: "rb-ge-03", name: "Caterpillar 3516B Multi-MW Generator", category: "Generator & Compressors", specifications: { "Output": "2,000 ekW", "Voltage": "4,160V", "Fuel Type": "Diesel/Dual Fuel" }, features: ["Sound-insulated canopy", "Remote SCADA panel"], applications: ["Rig site grid operations", "Emergency refinery backup"], imageUrl: "assets/images/gallery_worker_welder_new_1784166751430.jpg" },
-  { id: "rb-pu-04", name: "Gardner Denver PZ-11 Mud Pump", category: "Pumps & Tanks", specifications: { "Output Pressure": "5,000 PSI", "Input Power": "1,600 HP", "Flow Rate": "620 GPM" }, features: ["High-strength steel cylinders", "Direct motor coupling"], applications: ["Deep drilling mud circulation", "High-volume piping testing"], imageUrl: "assets/images/gallery_drilling_auger_new_1784166725298.jpg" }
+  { id: "rb-ge-03", name: "Caterpillar 3516B Multi-MW Generator", category: "Generator & Compressors", specifications: { "Output": "2,000 ekW", "Voltage": "4,160V", "Fuel Type": "Diesel/Dual Fuel" }, features: ["Sound-insulated canopy", "Remote SCADA panel"], applications: ["Rig site grid operations", "Emergency refinery backup"], imageUrl: "assets/images/equip_generator_unit_1794516293366.jpg" },
+  { id: "rb-pu-04", name: "Gardner Denver PZ-11 Mud Pump", category: "Pumps & Tanks", specifications: { "Output Pressure": "5,000 PSI", "Input Power": "1,600 HP", "Flow Rate": "620 GPM" }, features: ["High-strength steel cylinders", "Direct motor coupling"], applications: ["Deep drilling mud circulation", "High-volume piping testing"], imageUrl: "assets/images/equip_mud_pump_1794516293150.jpg" }
 ];
 
 const projectsData = [
-  { id: "proj-1", name: "Project Triton Deepwater Rig-Up", basin: "Gulf of Mexico", status: "Active Operations", lat: 27.5, lng: -90.2, details: "Full mast structural steel retrofit for 20,000 PSI high-pressure blow-out preventer installation on active semi-submersible rig.", specs: { "LTI safe hours": "450,000 hrs", "Active Cranes": "Liebherr LR 1600", "Welding Specs": "ASME Section VIII UT compliant" } },
-  { id: "proj-2", name: "Chicago Yard ASME Skid Prefab", basin: "Chicago Onshore", status: "Fabrication Complete", lat: 41.9, lng: -87.6, details: "Design and heavy weld fabrication of 4 major multi-valve pressure skids at our Chicago N. Washtenaw yard.", specs: { "LTI safe hours": "320,000 hrs", "Alloy Used": "Inconel 625 / Duplex Steel", "Audit Spec": "API-Q1 Vetted" } },
-  { id: "proj-3", name: "Project Aurora Arctic Logistics", basin: "International", status: "Mobilization Phase", lat: 70.3, lng: -148.5, details: "Polar transport logistics for a modular 150-foot drill tower assembly across active winter ice roads into Prudhoe Bay.", specs: { "LTI safe hours": "180,000 hrs", "Geotech Sensors": "Active Thick-ice bridges", "Temp Limits": "-45 degrees F" } }
+  { id: "proj-1", name: "Project Triton Deepwater Rig-Up", basin: "Gulf of Mexico", status: "Active Operations", lat: 27.5, lng: -90.2, details: "Full mast structural steel retrofit for 20,000 PSI high-pressure blow-out preventer installation on active semi-submersible rig.", specs: { "LTI safe hours": "450,000 hrs", "Active Cranes": "Liebherr LR 1600", "Welding Specs": "ASME Section VIII UT compliant" }, imageUrl: "assets/images/service_subsea_wellhead_1794516291827.jpg" },
+  { id: "proj-2", name: "Chicago Yard ASME Skid Prefab", basin: "Chicago Onshore", status: "Fabrication Complete", lat: 41.9, lng: -87.6, details: "Design and heavy weld fabrication of 4 major multi-valve pressure skids at our Chicago N. Washtenaw yard.", specs: { "LTI safe hours": "320,000 hrs", "Alloy Used": "Inconel 625 / Duplex Steel", "Audit Spec": "API-Q1 Vetted" }, imageUrl: "assets/images/gallery_worker_welder_new_1784166751430.jpg" },
+  { id: "proj-3", name: "Project Aurora Arctic Logistics", basin: "International", status: "Mobilization Phase", lat: 70.3, lng: -148.5, details: "Polar transport logistics for a modular 150-foot drill tower assembly across active winter ice roads into Prudhoe Bay.", specs: { "LTI safe hours": "180,000 hrs", "Geotech Sensors": "Active Thick-ice bridges", "Temp Limits": "-45 degrees F" }, imageUrl: "assets/images/service_heavy_haul_1794516293590.jpg" }
 ];
 
 const industriesData = [
-  { id: "oilfield-drilling", name: "Upstream Oilfield Drilling", description: "Supporting deep offshore and onshore drilling contractors with mast retrofits, subsea wellheads, and heavy riggings.", features: ["Mast structural steel certifications", "Subsea wellhead gasket testing", "API 4F derrick engineering audits"] },
-  { id: "petrochemical-refining", name: "Petrochemical Refining", description: "Providing heavy turnaround crawler cranes, high-capacity rigging layouts, and certified metal weld fabrication for refineries.", features: ["ASME Section VIII pressure vessel codes", "600-Ton crane lifts planning", "Refinery shutdown turnarounds"] },
-  { id: "heavy-infrastructure", name: "Heavy Industrial Infrastructure", description: "Custom fabrication of modular heavy equipment, skid bases, and high-load transport logs for industrial hubs.", features: ["Custom alloy steel structural welds", "Dual-fuel multi-MW energy arrays", "3D CAD route clearance sweeps"] }
+  { id: "oilfield-drilling", name: "Upstream Oilfield Drilling", description: "Supporting deep offshore and onshore drilling contractors with mast retrofits, subsea wellheads, and heavy riggings.", features: ["Mast structural steel certifications", "Subsea wellhead gasket testing", "API 4F derrick engineering audits"], imageUrl: "assets/images/gallery_drill_floor_new_1784166710321.jpg" },
+  { id: "petrochemical-refining", name: "Petrochemical Refining", description: "Providing heavy turnaround crawler cranes, high-capacity rigging layouts, and certified metal weld fabrication for refineries.", features: ["ASME Section VIII pressure vessel codes", "600-Ton crane lifts planning", "Refinery shutdown turnarounds"], imageUrl: "assets/images/gallery_crane_lift_new_1784166697548.jpg" },
+  { id: "heavy-infrastructure", name: "Heavy Industrial Infrastructure", description: "Custom fabrication of modular heavy equipment, skid bases, and high-load transport logs for industrial hubs.", features: ["Custom alloy steel structural welds", "Dual-fuel multi-MW energy arrays", "3D CAD route clearance sweeps"], imageUrl: "assets/images/hero_blueprint_review_new_1784166684154.jpg" }
 ];
 
 const testimonialsData = [
@@ -477,26 +477,34 @@ function renderServices(container) {
       <!-- Grid Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         ${filteredServices.map(serv => `
-          <div class="bg-[#0a0f1a] border border-zinc-800 p-6 rounded-sm space-y-4 hover:border-zinc-700 transition-all flex flex-col justify-between">
-            <div class="space-y-3">
-              <span class="text-[9px] font-mono text-zinc-500 uppercase tracking-widest block">${serv.category}</span>
-              <h4 class="text-sm font-display font-bold text-white uppercase tracking-wider">${serv.title}</h4>
-              <p class="text-xs text-zinc-400 leading-relaxed font-sans">${serv.desc}</p>
-              
-              <!-- Compact list specs -->
-              <div class="bg-[#050B15] border border-zinc-850 p-3 rounded-sm space-y-1.5 text-[10px] font-mono">
-                ${Object.entries(serv.specs).map(([key, val]) => `
-                  <div class="flex justify-between border-b border-zinc-900 last:border-0 pb-1 last:pb-0">
-                    <span class="text-zinc-500 uppercase">${key}:</span>
-                    <span class="text-white font-bold">${val}</span>
-                  </div>
-                `).join('')}
+          <div class="bg-[#0a0f1a] border border-zinc-800 rounded-sm overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between group">
+            <div>
+              <div class="aspect-video w-full bg-[#050B15] relative overflow-hidden border-b border-zinc-850">
+                <img src="${serv.imageUrl}" alt="${serv.title}" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-transparent to-black/30"></div>
+                <span class="absolute bottom-2.5 left-3 bg-zinc-950/85 backdrop-blur-sm border border-zinc-800 px-2.5 py-1 rounded-sm text-[9px] font-mono text-[#148062] font-bold uppercase tracking-widest">${serv.category}</span>
+              </div>
+              <div class="p-6 pb-2 space-y-3">
+                <h4 class="text-base font-display font-bold text-white uppercase tracking-wider">${serv.title}</h4>
+                <p class="text-xs text-zinc-400 leading-relaxed font-sans">${serv.desc}</p>
+                
+                <!-- Compact list specs -->
+                <div class="bg-[#050B15] border border-zinc-850 p-3 rounded-sm space-y-1.5 text-[10px] font-mono">
+                  ${Object.entries(serv.specs).map(([key, val]) => `
+                    <div class="flex justify-between border-b border-zinc-900 last:border-0 pb-1 last:pb-0">
+                      <span class="text-zinc-500 uppercase">${key}:</span>
+                      <span class="text-white font-bold">${val}</span>
+                    </div>
+                  `).join('')}
+                </div>
               </div>
             </div>
             
-            <button onclick="openCustomQuoteModal('${serv.id}')" class="w-full bg-[#148062]/10 border border-[#148062]/30 hover:bg-[#148062] hover:text-white text-[#148062] transition-colors py-2.5 text-xs font-mono font-bold uppercase tracking-wider rounded-sm mt-4 cursor-pointer text-center">
-              Request Specific Fee Spec
-            </button>
+            <div class="p-6 pt-3">
+              <button onclick="openCustomQuoteModal('${serv.id}')" class="w-full bg-[#148062]/10 border border-[#148062]/30 hover:bg-[#148062] hover:text-white text-[#148062] transition-colors py-2.5 text-xs font-mono font-bold uppercase tracking-wider rounded-sm cursor-pointer text-center">
+                Request Specific Fee Spec
+              </button>
+            </div>
           </div>
         `).join('')}
       </div>
@@ -578,10 +586,17 @@ function renderProjects(container) {
       </div>
 
       <!-- Right side: Selection details panel (Col 8-12) -->
-      <div class="lg:col-span-5 bg-[#0a0f1a] border border-zinc-800 p-6 rounded-lg space-y-6">
-        <div class="space-y-1 pb-4 border-b border-zinc-800">
+      <div class="lg:col-span-5 bg-[#0a0f1a] border border-zinc-800 p-6 rounded-lg space-y-5">
+        <div class="space-y-1 pb-3 border-b border-zinc-800">
           <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest block">Deployment Logs Telemetry</span>
           <h4 id="proj-details-name" class="text-xl font-serif font-bold text-white uppercase italic tracking-tight line-clamp-1">${selectedProject.name}</h4>
+        </div>
+
+        <!-- Illustrational Project Photo -->
+        <div class="aspect-video w-full rounded-md overflow-hidden border border-zinc-850 relative bg-[#050B15]">
+          <img src="${selectedProject.imageUrl}" alt="${selectedProject.name}" referrerpolicy="no-referrer" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#050B15]/85 via-transparent to-black/20"></div>
+          <span class="absolute bottom-2.5 left-3 bg-zinc-950/85 backdrop-blur-sm border border-zinc-800 px-2.5 py-1 rounded-sm text-[9px] font-mono text-emerald-400 font-bold uppercase">${selectedProject.basin} // ${selectedProject.status}</span>
         </div>
 
         <div class="space-y-4">
@@ -614,6 +629,27 @@ function renderProjects(container) {
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Visual Project Portfolio Showcase Strip -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+      ${projectsData.map(proj => {
+        const isSelected = selectedProject.id === proj.id;
+        return `
+          <div onclick="selectMapProject('${proj.id}')" class="bg-[#0a0f1a] border ${isSelected ? 'border-[#ff6a00]' : 'border-zinc-800 hover:border-zinc-700'} rounded-md overflow-hidden cursor-pointer transition-all group">
+            <div class="aspect-video w-full bg-[#050B15] relative overflow-hidden border-b border-zinc-850">
+              <img src="${proj.imageUrl}" alt="${proj.name}" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-transparent to-black/20"></div>
+              <span class="absolute top-2.5 right-2.5 bg-zinc-950/85 backdrop-blur-sm border border-zinc-800 px-2 py-0.5 rounded-sm text-[9px] font-mono ${isSelected ? 'text-[#ff6a00]' : 'text-emerald-400'} font-bold uppercase">${proj.status}</span>
+            </div>
+            <div class="p-4 space-y-1.5">
+              <span class="text-[9px] font-mono text-zinc-500 uppercase tracking-wider">${proj.basin}</span>
+              <h5 class="text-sm font-display font-bold text-white uppercase tracking-wide">${proj.name}</h5>
+              <p class="text-[11px] text-zinc-400 line-clamp-2 font-sans">${proj.details}</p>
+            </div>
+          </div>
+        `;
+      }).join('')}
     </div>
   `;
 }
@@ -683,44 +719,17 @@ function renderIndustries(container) {
           <span class="text-[9px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-1 rounded-sm uppercase font-bold">API Approved</span>
         </div>
 
-        <!-- Abstract custom vector diagrams SVG -->
-        <div class="aspect-video w-full rounded bg-[#050B15] border border-zinc-850 p-4 flex flex-col justify-between relative overflow-hidden">
-          <div class="flex justify-between text-[8px] font-mono text-zinc-600">
-            <span>DIAGRAM: ${selectedIndustry.id.toUpperCase()}_LOG</span>
-            <span>SYSTEM SCALE: N/A</span>
+        <!-- Sector Illustrational Showcase -->
+        <div class="aspect-video w-full rounded bg-[#050B15] border border-zinc-850 relative overflow-hidden">
+          <img src="${selectedIndustry.imageUrl}" alt="${selectedIndustry.name}" referrerpolicy="no-referrer" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#050B15]/90 via-[#050B15]/20 to-[#050B15]/60"></div>
+          <div class="absolute top-3 left-3 right-3 flex justify-between text-[9px] font-mono text-zinc-300 bg-zinc-950/70 backdrop-blur-sm px-2.5 py-1 rounded-sm border border-zinc-800/80">
+            <span>SECTOR_LOG: ${selectedIndustry.id.toUpperCase()}</span>
+            <span class="text-emerald-400 font-bold">API SPEC CHECK: PASS</span>
           </div>
-          
-          <div class="flex-1 w-full flex items-center justify-center my-2">
-            <svg viewBox="0 0 400 200" class="w-full max-w-xs h-auto opacity-70">
-              <rect width="400" height="200" fill="#020617" rx="3" />
-              <path d="M 0,100 L 400,100 M 100,0 L 100,200 M 200,0 L 200,200 M 300,0 L 300,200" stroke="#0f172a" stroke-width="1" stroke-dasharray="3,3" />
-              
-              ${selectedIndustry.id === 'oilfield-drilling' ? `
-                <!-- Drilling rig derrick outline -->
-                <path d="M 120,180 L 180,40 L 220,40 L 280,180 Z" fill="none" stroke="#ff6a00" stroke-width="1.5" />
-                <path d="M 150,110 L 250,110 M 165,80 L 235,80 M 180,40 L 180,180" stroke="#334155" stroke-width="1" />
-                <path d="M 180,80 L 220,180" stroke="#ff6a00" stroke-width="2.5" />
-                <circle cx="200" cy="40" r="4" fill="#ff6a00" />
-              ` : selectedIndustry.id === 'petrochemical-refining' ? `
-                <!-- Tank & piping layout -->
-                <rect x="80" y="60" width="80" height="110" rx="6" fill="none" stroke="#334155" stroke-width="1.5" />
-                <rect x="220" y="40" width="40" height="130" fill="none" stroke="#334155" stroke-width="1.5" />
-                <path d="M 160,110 L 220,110" stroke="#ff6a00" stroke-width="3" fill="none" />
-                <circle cx="190" cy="110" r="5" fill="#ff6a00" />
-                <path d="M 120,170 Q 190,210 240,170" stroke="#334155" stroke-width="1.5" fill="none" />
-              ` : `
-                <!-- Heavy crawler crawler track & boom -->
-                <rect x="80" y="140" width="100" height="25" rx="3" fill="none" stroke="#334155" stroke-width="1.5" />
-                <circle cx="100" cy="152" r="8" fill="#1e293b" />
-                <circle cx="130" cy="152" r="8" fill="#1e293b" />
-                <circle cx="160" cy="152" r="8" fill="#1e293b" />
-                <line x1="130" y1="140" x2="280" y2="40" stroke="#ff6a00" stroke-width="3" />
-                <line x1="280" y1="40" x2="280" y2="120" stroke="#334155" stroke-width="1" />
-              `}
-            </svg>
+          <div class="absolute bottom-3 left-3 bg-zinc-950/80 backdrop-blur-sm px-3 py-1 rounded-sm border border-zinc-800/80 text-[10px] font-mono text-white font-bold uppercase tracking-wider">
+            ${selectedIndustry.name}
           </div>
-          
-          <div class="text-[8px] font-mono text-zinc-600 text-right">API SPEC CHECK: PASS</div>
         </div>
 
         <div class="space-y-4">
@@ -785,15 +794,14 @@ function renderEquipment(container) {
       </div>
 
       <!-- Equipment Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         ${filteredItems.map(equip => `
-          <div class="bg-[#0a0f1a] border border-zinc-800 rounded-sm overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between">
-            <div class="aspect-video bg-gradient-to-br from-[#0c1322] to-[#040811] relative overflow-hidden flex flex-col items-center justify-center p-4 text-center">
-              <div class="w-10 h-10 rounded-sm bg-[#148062]/10 border border-[#148062]/30 flex items-center justify-center text-[#148062] mb-2">
-                <i data-lucide="wrench" class="w-5 h-5"></i>
-              </div>
-              <span class="text-[8px] font-mono tracking-widest text-[#148062] font-bold uppercase mb-1">FLEET ID: ${equip.id.toUpperCase()}</span>
-              <span class="absolute bottom-2 left-2 bg-zinc-950/80 backdrop-blur-sm border border-zinc-800/85 px-2 py-0.5 rounded-sm text-[9px] font-mono font-bold text-[#148062] uppercase">
+          <div class="bg-[#0a0f1a] border border-zinc-800 rounded-sm overflow-hidden hover:border-zinc-700 transition-all flex flex-col justify-between group">
+            <div class="aspect-video bg-[#050B15] relative overflow-hidden border-b border-zinc-850">
+              <img src="${equip.imageUrl}" alt="${equip.name}" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-transparent to-black/30"></div>
+              <span class="absolute top-2.5 right-2.5 bg-zinc-950/85 backdrop-blur-sm border border-zinc-800 px-2 py-0.5 rounded-sm text-[8px] font-mono tracking-widest text-zinc-300 font-bold uppercase">ID: ${equip.id.toUpperCase()}</span>
+              <span class="absolute bottom-2 left-2 bg-zinc-950/85 backdrop-blur-sm border border-zinc-800/85 px-2 py-0.5 rounded-sm text-[9px] font-mono font-bold text-[#148062] uppercase">
                 ${equip.category}
               </span>
             </div>
@@ -845,11 +853,10 @@ function viewEquipmentSpecs(equipId) {
           <h3 class="text-2xl font-serif font-bold text-white uppercase italic tracking-tight">${equip.name}</h3>
           <p class="text-[11px] text-zinc-500 font-sans">Full mechanical evaluation and dimensional data sheet registered to Rigas Berkeley LLC logistics networks.</p>
         </div>
-        <div class="md:col-span-4 aspect-video rounded-sm overflow-hidden border border-zinc-850 bg-gradient-to-br from-[#0c1322] to-[#040811] flex flex-col items-center justify-center p-4 text-center">
-          <div class="w-12 h-12 rounded-sm bg-[#148062]/15 border border-[#148062]/40 flex items-center justify-center text-[#148062] mb-2 animate-pulse">
-            <i data-lucide="cpu" class="w-6 h-6"></i>
-          </div>
-          <span class="text-[8px] font-mono tracking-widest text-zinc-500 font-bold uppercase">CAD SPEC SHEET REG.</span>
+        <div class="md:col-span-4 aspect-video rounded-sm overflow-hidden border border-zinc-850 relative bg-[#050B15]">
+          <img src="${equip.imageUrl}" alt="${equip.name}" referrerpolicy="no-referrer" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#050B15]/80 via-transparent to-transparent"></div>
+          <span class="absolute bottom-2 left-2.5 text-[8px] font-mono tracking-widest text-zinc-200 bg-zinc-950/80 px-2 py-0.5 rounded-sm border border-zinc-800 font-bold uppercase">FLEET ASSET // ${equip.id.toUpperCase()}</span>
         </div>
       </div>
 
